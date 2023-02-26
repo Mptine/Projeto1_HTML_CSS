@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="card.css" rel="stylesheet" type="text/css" />
+  <link href="mobile.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <img class="site-icon" src="https://via.placeholder.com/48">
+    <div>
+      <a class="header-item-cont" href="index.html">
+        <span class="header-desc">Home</span>
+      </a>
+    </div>
+    <div>
+      <a class="header-item-cont" href="/resume.html">
+        <span class="header-desc">Resume</span>
+      </a>
+    </div>
+    <div>
+      <a class="header-item-cont" href="/contact.html">
+        <span class="header-desc">Contact Me</span>
+      </a>
+    </div>
+  </div>
+  <div class="contact-form">
+    <form action="https://getform.io/f/bae3fb96-ad4b-45ee-b72f-79fc991d9f9e" method="post">
+      <h2>Contact Me</h2>
+      <label>Fill the form below, and send me a message:</label>
+      <input type="text" minlength="2" pattern="\w{3,16}" maxlength="16" important id="username" placeholder="Your name" name="username">
+      <input type="text" important pattern="\w{3,16}" id="email" placeholder="Your Email Adress" name="email">
+      <input type="text" id="phone" placeholder="Your Phone Number(optional)" name="phone">
+      <label>How would you rate my page?</label>
+      
+      <div style="display: flex; align-items: center; justify-items: left">
+        <input type="radio"id="rate" name="rate1" value="rate1" />
+        <label for="contactChoice1">1</label>
+
+        <input type="radio" id="rate" name="rate2" value="rate2" />
+        <label for="contactChoice2">2</label>
+
+        <input type="radio" id="rate" name="rate3" value="rate3" />
+        <label for="contactChoice3">3</label>
+
+        <input type="radio" id="rate" name="rate4" value="rate4" />
+        <label for="contactChoice1">4</label>
+
+        <input type="radio" id="rate" name="rate5" value="rate5" />
+        <label for="contactChoice2">5</label>
+      </div>
+      
+      <textarea type="text" minlength="16" maxlength="256" id="message" placeholder="Type your message here..."
+        name="message"></textarea>
+      <input type="submit" important id="submit" value="Submit">
+
+    </form>
+  </div>
+  <div class="footer-form">
+    <h2 class="footer-text">You can find me on:</h2>
+    <div class="footer-icons">
+      <img class="footer-icon" src="/resources/iconLinkedin.png">
+      <img class="footer-icon" src="/resources/iconGit.png">
+      <img class="footer-icon" src="/resources/iconMail.png">
+      <img class="footer-icon" src="/resources/iconWhatsapp.png">
+      <img class="footer-icon" src="/resources/iconTelegram.png">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
